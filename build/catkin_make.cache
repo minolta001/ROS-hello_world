@@ -1,0 +1,2 @@
+turtlesim_cleaner
+-DCATKIN_DEVEL_PREFIX=/home/lichen_ubuntu_t480/OneDrive_minolta001@gmail.com/UmassAmherst/2023_Spring/COMP_603/P1/P1D2/ros-helloworld/devel -DCMAKE_INSTALL_PREFIX=/home/lichen_ubuntu_t480/OneDrive_minolta001@gmail.com/UmassAmherst/2023_Spring/COMP_603/P1/P1D2/ros-helloworld/install -G Unix Makefiles
