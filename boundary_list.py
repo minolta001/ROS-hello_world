@@ -4,6 +4,8 @@ import csv
 
 # read image
 img = cv2.imread('Umass.png')
+tmp = img[::-1,:,:]
+img = tmp
 
 # convert to grayscale
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -25,7 +27,7 @@ print('number of points: ',len(cntr))
 # list contour points
 #for pt in cntr:
 
-with open('result.csv', 'w', newline='') as file:
+with open('result_flip.csv', 'w', newline='') as file:
     header = ['x', 'y']
     writer = csv.DictWriter(file, fieldnames=header)
     writer.writeheader()
