@@ -1,3 +1,11 @@
+'''
+Author: Li Chen lchen0@umass.edu
+Date: 2023-02-27 01:53:08
+LastEditors: Li Chen lchen0@umass.edu
+LastEditTime: 2023-03-07 15:00:35
+FilePath: /undefined/home/lichen_ubuntu_t480/OneDrive_minolta001@gmail.com/UmassAmherst/2023_Spring/COMP_603/P1/P1D2/ros-helloworld/boundary_list.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 import cv2
 import numpy as np
 import csv
@@ -27,7 +35,7 @@ print('number of points: ',len(cntr))
 # list contour points
 #for pt in cntr:
 
-with open('result_flip.csv', 'w', newline='') as file:
+with open('boundary.csv', 'w', newline='') as file:
     header = ['x', 'y']
     writer = csv.DictWriter(file, fieldnames=header)
     writer.writeheader()
